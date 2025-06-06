@@ -1,0 +1,129 @@
+/* frontend/public/css/styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --teal: #008080;
+  --teal-dark: #005757;
+  --cream: #fff9f0;
+  --text-dark: #1b1b1b;
+  --text-light: #f4f4f4;
+  --accent: #ffc107;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--text-dark);
+  color: var(--cream);
+  transition: all 0.3s ease-in-out;
+}
+
+nav {
+  background-color: var(--teal-dark);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+nav a {
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--teal);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+h1, h2 {
+  color: var(--cream);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+p, ul, li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid var(--teal-dark);
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--text-dark);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Add animation for fade-in */
+.container {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
